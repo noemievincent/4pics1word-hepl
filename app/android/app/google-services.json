@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "6555227675",
+    "project_id": "pics1word-81a50",
+    "storage_bucket": "pics1word-81a50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6555227675:android:e697d77b5a0f076f018abe",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6555227675-6paf7hq1v60lmqtmgqk8c864vnu01525.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBifwlD4mv9jEq126wcm5XvcctOnImZq9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6555227675-6paf7hq1v60lmqtmgqk8c864vnu01525.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "6555227675-lv71lkf2962uvmtf6fm4nhebv54o57fl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.4pics1word"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
