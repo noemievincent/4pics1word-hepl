@@ -1,0 +1,53 @@
+{
+  "words": [
+    {
+      "word": "Abeille",
+      "category": "nom féminin",
+      "previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_3.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_1.png?alt=media&token=bece8f9f-337b-4158-82f3-9f5eaca8b603",
+        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_2.png?alt=media&token=ed5abf78-d178-4254-b10e-36063d5e82b8",
+        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_3.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
+        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_4.png?alt=media&token=c218f451-f686-4420-8c3d-1d3d0d6bc541"
+      ],
+      "definitions": [
+        "Insecte vivant en colonies et produisant la cire et le miel."
+      ],
+      "letters": [
+        {"letter": "A", "isUsed": false, "position": 0},
+        {"letter": "B", "isUsed": false, "position": 0},
+        {"letter": "E", "isUsed": false, "position": 0},
+        {"letter": "I", "isUsed": false, "position": 0},
+        {"letter": "L", "isUsed": false, "position": 0},
+        {"letter": "L", "isUsed": false, "position": 0},
+        {"letter": "E", "isUsed": false, "position": 0}
+      ]
+    },
+    {
+      "word": "Chenille",
+      "category": "nom féminin",
+      "previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_1.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_1.png?alt=media&token=22c5ec89-d3ce-477c-9c14-98404db38ac8",
+        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_2.png?alt=media&token=ed5abf78-d178-4254-b10e-36063d5e82b8",
+        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_3.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
+        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_4.png?alt=media&token=c218f451-f686-4420-8c3d-1d3d0d6bc541"
+      ],
+      "definitions": [
+        "Bande sans fin souple, à maillons métalliques ou en caoutchouc liés et articulés par des axes à chacune de leurs extrémités, interposée entre le sol et les roues d'un véhicule pour assurer la traction dans des terrains à faible coefficient d'adhérence.",
+        "Forme larvaire des insectes de l'ordre des lépidoptères.",
+        "Groupe de danseurs à la queue leu-leu."
+      ],
+      "letters": [
+        {"letter": "C", "isUsed": false, "position": 0},
+        {"letter": "H", "isUsed": false, "position": 0},
+        {"letter": "E", "isUsed": false, "position": 0},
+        {"letter": "N", "isUsed": false, "position": 0},
+        {"letter": "I", "isUsed": false, "position": 0},
+        {"letter": "L", "isUsed": false, "position": 0},
+        {"letter": "L", "isUsed": false, "position": 0},
+        {"letter": "E", "isUsed": false, "position": 0}
+      ]
+    }
+  ]
+}
