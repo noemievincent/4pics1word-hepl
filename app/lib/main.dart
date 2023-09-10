@@ -1,125 +1,132 @@
+import 'dart:convert';
+import 'dart:math';
+
+import 'package:app/screens/words_list.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import 'models/word.dart';
+import 'routes/router.dart';
+import 'screens/error.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
+List<Word> _words = [];
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a blue toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    return FutureBuilder(
+      future: setupData(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.done) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          if (_words.isEmpty) {
+            return const ErrorScreen(
+              title: 'No words found',
+            );
+          }
+          return MaterialApp(
+            title: '4 Images 1 Mot',
+            home: WordsList(words: _words),
+            routes: router,
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(fontFamily: 'Montserrat'),
+          );
+        }
+        return const ErrorScreen(
+          title: 'There seems to be a connection problem',
+        );
+      },
     );
+  }
+
+  Future<void> setupData() async {
+    await Firebase.initializeApp(); //* Initialize Firebase
+    _words =
+        await getWordsFromFirestore(); //* Fetch and assign words data from Firestore
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
+//* Retrieve words from the Firestore collection.
+Future<List<Word>> getWordsFromFirestore() async {
+  final List<Word> fetchedWords = [];
+  await FirebaseFirestore.instance
+      .collection('words')
+      .get()
+      .then((datas) async {
+    if (datas.docs.isNotEmpty) {
+      print('Data fetched with success!');
+      fetchedWords.addAll(parseWords(datas.docs));
+      return fetchedWords;
+    } else {
+      print("No data found");
+    }
+  });
+  return fetchedWords;
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+List<Word> parseWords(datas) {
+  final List<Word> parsedWords = [];
+  for (var data in datas) {
+    Word word = Word.fromFirestore(data);
+    parsedWords.add(word);
+  }
+  return parsedWords;
+}
 
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
+//* Run only once to fill the Firestore collections
+Future<void> addWordsToFirestore() async {
+  List wordsData = [];
+  CollectionReference wordsCollection =
+      FirebaseFirestore.instance.collection('words');
+  CollectionReference dailyWordCollection =
+      FirebaseFirestore.instance.collection('dailyWord');
+
+  final String response =
+      await rootBundle.loadString('assets/sources/words.json');
+  final data = await json.decode(response);
+  wordsData = data["words"];
+
+  for (var word in wordsData) {
+    wordsCollection
+        .doc(wordsData.indexOf(word).toString())
+        .set({
+          'word': word['word'],
+          'category': word['category'],
+          'previewImage': word['previewImage'],
+          'images': word['images'],
+          'definitions': word['definitions'],
+          'letters': word['letters']
+        })
+        .then((value) => print("Word Added"))
+        .catchError((error) => print("Failed to add word: $error"));
   }
 
-  @override
-  Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have clicked the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
+  var dailyWord = wordsData[Random().nextInt(wordsData.length)];
+  DateTime now = DateTime.now();
+  DateTime date = DateTime(now.year, now.month, now.day);
+
+  dailyWordCollection
+      .doc(wordsData.indexOf(dailyWord).toString())
+      .set({
+        'date': date,
+        'word': dailyWord['word'],
+        'category': dailyWord['category'],
+        'previewImage': dailyWord['previewImage'],
+        'images': dailyWord['images'],
+        'definitions': dailyWord['definitions'],
+        'letters': dailyWord['letters']
+      })
+      .then((value) => print("Daily Word Added"))
+      .catchError((error) => print("Failed to add word: $error"));
 }
