@@ -5,13 +5,20 @@ import '../models/word.dart';
 
 class WordsList extends StatefulWidget {
   final List<Word> words;
-  const WordsList({required this.words, Key? key}) : super(key: key);
+  final Function? removeGuessedWord;
+  const WordsList({required this.words, this.removeGuessedWord, Key? key})
+      : super(key: key);
 
   @override
   State<WordsList> createState() => _WordsListState();
 }
 
 class _WordsListState extends State<WordsList> {
+  removeGuessedWord(Word word) {
+    print('${word.word} has been guessed!');
+    widget.removeGuessedWord!(word);
+  }
+
   @override
   void initState() {
     super.initState();
@@ -20,19 +27,18 @@ class _WordsListState extends State<WordsList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
-        child: ListView.separated(
-            itemCount: widget.words.length,
-            separatorBuilder: (BuildContext context, int index) =>
-                const Divider(
-                  color: Colors.black,
-                  height: 40,
-                ),
-            itemBuilder: (context, index) {
-              return WordData(word: widget.words[index]);
-            }),
-      ),
+      body: ListView.separated(
+          itemCount: widget.words.length,
+          separatorBuilder: (BuildContext context, int index) => const SizedBox(
+                height: 10,
+              ),
+          itemBuilder: (context, index) {
+            return WordData(
+              word: widget.words[index],
+              index: index,
+              removeGuessedWord: removeGuessedWord,
+            );
+          }),
     );
   }
 }

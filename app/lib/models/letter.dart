@@ -10,16 +10,23 @@ class Letter {
       this.isUsed = false,
       this.position = 0});
 
-  toJSONEncodable() {
-    Map<String, dynamic> item = {};
+  // toJSONEncodable() {
+  //   Map<String, dynamic> item = {};
 
-    item['id'] = id;
-    item['letter'] = letter;
-    item['isUsed'] = isUsed;
-    item['position'] = position;
+  //   item['id'] = id;
+  //   item['letter'] = letter;
+  //   item['isUsed'] = isUsed;
+  //   item['position'] = position;
 
-    return item;
-  }
+  //   return item;
+  // }
+
+  Map toJson() => {
+        'id': id,
+        'letter': letter,
+        'isUsed': isUsed,
+        'position': position,
+      };
 
   factory Letter.fromJson(Map<String, dynamic> json) {
     return Letter(

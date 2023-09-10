@@ -21,21 +21,31 @@ class Word {
     required this.letters,
   });
 
-  toJSONEncodable() {
-    Map<String, dynamic> item = {};
+  // toJSONEncodable() {
+  //   Map<String, dynamic> item = {};
 
-    item['id'] = id;
-    item['word'] = word;
-    item['category'] = category;
-    item['previewImage'] = previewImage;
-    item['images'] = images;
-    item['definitions'] = definitions;
-    item['letters'] = letters.map((letter) {
-      return letter.toJSONEncodable();
-    }).toList();
+  //   item['id'] = id;
+  //   item['word'] = word;
+  //   item['category'] = category;
+  //   item['previewImage'] = previewImage;
+  //   item['images'] = images;
+  //   item['definitions'] = definitions;
+  //   item['letters'] = letters.map((letter) {
+  //     return letter.toJSONEncodable();
+  //   }).toList();
 
-    return item;
-  }
+  //   return item;
+  // }
+
+  Map toJson() => {
+        'id': id,
+        'word': word,
+        'category': category,
+        'previewImage': previewImage,
+        'images': images,
+        'definitions': definitions,
+        'letters': letters,
+      };
 
   factory Word.fromJson(Map<String, dynamic> json) {
     List<String> images = [];

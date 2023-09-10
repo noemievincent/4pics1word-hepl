@@ -1,60 +1,113 @@
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:app/screens/words_list.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'models/guessed_words.dart';
+import 'models/unguessed_words.dart';
 import 'models/word.dart';
 import 'routes/router.dart';
 import 'screens/error.dart';
+import 'screens/words_list.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 List<Word> _words = [];
+final UnguessedWords _unguessedWords = UnguessedWords();
+final GuessedWords _guessedWords = GuessedWords();
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-      future: setupData(),
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.done) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          }
+    return MaterialApp(
+      title: '4 Images 1 Mot',
+      home: HomePage(),
+      routes: router,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Montserrat'),
+    );
+  }
+}
 
-          if (_words.isEmpty) {
-            return const ErrorScreen(
-              title: 'No words found',
-            );
-          }
-          return MaterialApp(
-            title: '4 Images 1 Mot',
-            home: WordsList(words: _words),
-            routes: router,
-            debugShowCheckedModeBanner: false,
-            theme: ThemeData(fontFamily: 'Montserrat'),
-          );
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  _handleGuessedWord(Word word) async {
+    _guessedWords.addItem(word);
+    _unguessedWords.removeItem(word);
+  }
+
+  Future<void> setupData() async {
+    await resetStorages();
+
+    var items = _unguessedWords.storage.getItem('unguessedWords');
+
+    if (items == null) {
+      print('Storage was empty');
+      await Firebase.initializeApp(); //* Initialize Firebase
+      _words =
+          await getWordsFromFirestore(); //* Fetch and assign words data from Firestore
+    } else {
+      print('Storage was not empty');
+      for (var item in items['items']) {
+        var word = Word.fromJson(item);
+        _words.add(word);
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder(
+      future: _unguessedWords.storage.ready,
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Center(child: CircularProgressIndicator());
+        }
+
+        if (snapshot.connectionState == ConnectionState.done) {
+          return FutureBuilder(
+              future: setupData(),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+
+                if (snapshot.connectionState == ConnectionState.done) {
+                  return WordsList(
+                      words: _words, removeGuessedWord: _handleGuessedWord);
+                }
+
+                return const ErrorScreen(
+                  title: 'There seems to be a connection problem',
+                );
+              });
         }
         return const ErrorScreen(
-          title: 'There seems to be a connection problem',
+          title: 'Could not access storage',
         );
       },
     );
   }
+}
 
-  Future<void> setupData() async {
-    await Firebase.initializeApp(); //* Initialize Firebase
-    _words =
-        await getWordsFromFirestore(); //* Fetch and assign words data from Firestore
-  }
+//* Reset storages while in developement mode for testing purposes
+Future<void> resetStorages() async {
+  _unguessedWords.clearStorage();
+  _guessedWords.clearStorage();
+  print('Storages have been reset');
 }
 
 //* Retrieve words from the Firestore collection.
@@ -66,7 +119,7 @@ Future<List<Word>> getWordsFromFirestore() async {
       .then((datas) async {
     if (datas.docs.isNotEmpty) {
       print('Data fetched with success!');
-      fetchedWords.addAll(parseWords(datas.docs));
+      fetchedWords.addAll(await parseWords(datas.docs));
       return fetchedWords;
     } else {
       print("No data found");
@@ -75,12 +128,14 @@ Future<List<Word>> getWordsFromFirestore() async {
   return fetchedWords;
 }
 
-List<Word> parseWords(datas) {
+Future<List<Word>> parseWords(datas) async {
   final List<Word> parsedWords = [];
   for (var data in datas) {
     Word word = Word.fromFirestore(data);
     parsedWords.add(word);
+    _unguessedWords.words.items.add(word);
   }
+  await _unguessedWords.saveToStorage();
   return parsedWords;
 }
 
