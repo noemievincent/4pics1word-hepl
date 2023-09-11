@@ -1,20 +1,20 @@
 import 'package:localstorage/localstorage.dart';
 
-import 'word.dart';
-import 'words.dart';
+import '/models/word.dart';
+import '/models/words.dart';
 
-class UnguessedWords {
+class UnguessedWordsStorage {
   final LocalStorage storage = LocalStorage('unguessedWords.json');
   final Words words = Words();
 
   saveToStorage() async {
     await storage.setItem('unguessedWords', words);
-    print('Storage saved !');
+    print('Unguessed Words storage saved !');
   }
 
   removeItem(Word word) async {
-    words.items.removeWhere((tempWord) => tempWord.id == word.id);
-    print('${word.word} removed !');
+    words.items.removeWhere((w) => w.id == word.id);
+    print('${word.word} removed from unguessed words!');
     await saveToStorage();
   }
 

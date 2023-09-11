@@ -1,20 +1,20 @@
 import 'package:localstorage/localstorage.dart';
 
-import 'word.dart';
-import 'words.dart';
+import '/models/word.dart';
+import '/models/words.dart';
 
-class GuessedWords {
+class GuessedWordsStorage {
   final LocalStorage storage = LocalStorage('guessedWords.json');
   final Words words = Words();
 
   saveToStorage() async {
     await storage.setItem('guessedWords', words);
-    print('Storage saved !');
+    print('Guessed Words storage saved !');
   }
 
   addItem(Word word) async {
     words.items.add(word);
-    print('${word.word} added !');
+    print('${word.word} added to guessed words!');
     await saveToStorage();
   }
 

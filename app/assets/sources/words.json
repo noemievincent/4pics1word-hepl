@@ -1,53 +1,653 @@
 {
-  "words": [
-    {
-      "word": "Abeille",
-      "category": "nom féminin",
-      "previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_3.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
-      "images": [
-        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_1.png?alt=media&token=bece8f9f-337b-4158-82f3-9f5eaca8b603",
-        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_2.png?alt=media&token=ed5abf78-d178-4254-b10e-36063d5e82b8",
-        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_3.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
-        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_4.png?alt=media&token=c218f451-f686-4420-8c3d-1d3d0d6bc541"
-      ],
-      "definitions": [
-        "Insecte vivant en colonies et produisant la cire et le miel."
-      ],
-      "letters": [
-        {"letter": "A", "isUsed": false, "position": 0},
-        {"letter": "B", "isUsed": false, "position": 0},
-        {"letter": "E", "isUsed": false, "position": 0},
-        {"letter": "I", "isUsed": false, "position": 0},
-        {"letter": "L", "isUsed": false, "position": 0},
-        {"letter": "L", "isUsed": false, "position": 0},
-        {"letter": "E", "isUsed": false, "position": 0}
-      ]
-    },
-    {
-      "word": "Chenille",
-      "category": "nom féminin",
-      "previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_1.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
-      "images": [
-        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_1.png?alt=media&token=22c5ec89-d3ce-477c-9c14-98404db38ac8",
-        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_2.png?alt=media&token=ed5abf78-d178-4254-b10e-36063d5e82b8",
-        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_3.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
-        "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_4.png?alt=media&token=c218f451-f686-4420-8c3d-1d3d0d6bc541"
-      ],
-      "definitions": [
-        "Bande sans fin souple, à maillons métalliques ou en caoutchouc liés et articulés par des axes à chacune de leurs extrémités, interposée entre le sol et les roues d'un véhicule pour assurer la traction dans des terrains à faible coefficient d'adhérence.",
-        "Forme larvaire des insectes de l'ordre des lépidoptères.",
-        "Groupe de danseurs à la queue leu-leu."
-      ],
-      "letters": [
-        {"letter": "C", "isUsed": false, "position": 0},
-        {"letter": "H", "isUsed": false, "position": 0},
-        {"letter": "E", "isUsed": false, "position": 0},
-        {"letter": "N", "isUsed": false, "position": 0},
-        {"letter": "I", "isUsed": false, "position": 0},
-        {"letter": "L", "isUsed": false, "position": 0},
-        {"letter": "L", "isUsed": false, "position": 0},
-        {"letter": "E", "isUsed": false, "position": 0}
-      ]
-    }
-  ]
+	"words": [
+		{
+			"word": "Abeille",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_3.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_1.png?alt=media&token=bece8f9f-337b-4158-82f3-9f5eaca8b603",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_2.png?alt=media&token=ed5abf78-d178-4254-b10e-36063d5e82b8",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_3.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/abeille%2Fabeille_4.png?alt=media&token=c218f451-f686-4420-8c3d-1d3d0d6bc541"
+			],
+			"definitions": [
+				"Insecte vivant en colonies et produisant la cire et le miel."
+			],
+			"letters": [
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "B", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Chenille",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chenille%2Fchenille_4.png?alt=media"
+			],
+			"definitions": [
+				"Bande sans fin souple, à maillons métalliques ou en caoutchouc liés et articulés par des axes à chacune de leurs extrémités, interposée entre le sol et les roues d'un véhicule pour assurer la traction dans des terrains à faible coefficient d'adhérence.",
+				"Forme larvaire des insectes de l'ordre des lépidoptères.",
+				"Groupe de danseurs à la queue leu-leu."
+			],
+			"letters": [
+				{ "letter": "C", "isUsed": false, "position": 0 },
+				{ "letter": "H", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "N", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Souris",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/souris%2Fsouris_2.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/souris%2Fsouris_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/souris%2Fsouris_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/souris%2Fsouris_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/souris%2Fsouris_4.png?alt=media"
+			],
+			"definitions": [
+				"Petit mammifère rongeur (muridé), ubiquiste, au pelage gris, qui fréquente bois et champs, mais aussi et surtout les maisons.",
+				"Dispositif de pointage qui se relie à l'ordinateur et permet de déplacer le curseur (la flèche) à l'écran."
+			],
+			"letters": [
+				{ "letter": "S", "isUsed": false, "position": 0 },
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "U", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "S", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Paille",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/paille%2Fpaille_4.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/paille%2Fpaille_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/paille%2Fpaille_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/paille%2Fpaille_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/paille%2Fpaille_4.png?alt=media"
+			],
+			"definitions": [
+				"Tige de graminée, en particulier de céréale, dépouillée de son grain.",
+				"Tube ouvert aux deux extrémités qui permet d'aspirer nos boissons une fois trempées dans un liquide."
+			],
+			"letters": [
+				{ "letter": "P", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "CD",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cd%2Fcd_4.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cd%2Fcd_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cd%2Fcd_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cd%2Fcd_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cd%2Fcd_4.png?alt=media"
+			],
+			"definitions": [
+				"Disque numérique de 12 centimètres de diamètre à lecture par laser."
+			],
+			"letters": [
+				{ "letter": "C", "isUsed": false, "position": 0 },
+				{ "letter": "D", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Pelouse",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/pelouse%2Fpelouse_3.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/pelouse%2Fpelouse_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/pelouse%2Fpelouse_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/pelouse%2Fpelouse_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/pelouse%2Fpelouse_4.png?alt=media"
+			],
+			"definitions": [
+				"Terrain couvert d'herbe maintenue rase par des fauches fréquentes."
+			],
+			"letters": [
+				{ "letter": "P", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "U", "isUsed": false, "position": 0 },
+				{ "letter": "S", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Batterie",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/batterie%2Fbatterie_3.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/batterie%2Fbatterie_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/batterie%2Fbatterie_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/batterie%2Fbatterie_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/batterie%2Fbatterie_4.png?alt=media"
+			],
+			"definitions": [
+				"Système destiné au stockage de l'énergie électrique sous une forme différente."
+			],
+			"letters": [
+				{ "letter": "B", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Applaudir",
+			"category": "verbe",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/applaudir%2Fapplaudir_4.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/applaudir%2Fapplaudir_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/applaudir%2Fapplaudir_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/applaudir%2Fapplaudir_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/applaudir%2Fapplaudir_4.png?alt=media"
+			],
+			"definitions": [
+				"Louer, approuver quelqu'un, quelque chose, lui marquer son admiration en battant des mains."
+			],
+			"letters": [
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "P", "isUsed": false, "position": 0 },
+				{ "letter": "P", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "U", "isUsed": false, "position": 0 },
+				{ "letter": "D", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Lire",
+			"category": "verbe",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/lire%2Flire_2.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/lire%2Flire_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/lire%2Flire_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/lire%2Flire_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/lire%2Flire_4.png?alt=media"
+			],
+			"definitions": [
+				"Prendre connaissance du contenu d'un texte par la lecture."
+			],
+			"letters": [
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Soupe",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/soupe%2Fsoupe_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/soupe%2Fsoupe_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/soupe%2Fsoupe_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/soupe%2Fsoupe_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/soupe%2Fsoupe_4.png?alt=media"
+			],
+			"definitions": ["Potage ou bouillon servi sur des tranches de pain."],
+			"letters": [
+				{ "letter": "S", "isUsed": false, "position": 0 },
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "U", "isUsed": false, "position": 0 },
+				{ "letter": "P", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Brun",
+			"category": "adjectif",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/brun%2Fbrun_4.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/brun%2Fbrun_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/brun%2Fbrun_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/brun%2Fbrun_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/brun%2Fbrun_4.png?alt=media"
+			],
+			"definitions": ["Couleur intermédiaire entre le roux et le noir."],
+			"letters": [
+				{ "letter": "B", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "U", "isUsed": false, "position": 0 },
+				{ "letter": "N", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Botte",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/botte%2Fbotte_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/botte%2Fbotte_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/botte%2Fbotte_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/botte%2Fbotte_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/botte%2Fbotte_4.png?alt=media"
+			],
+			"definitions": [
+				"Chaussure de cuir, de caoutchouc, etc., qui enferme le pied et la jambe et quelquefois le bas de la cuisse ou même la cuisse entière."
+			],
+			"letters": [
+				{ "letter": "B", "isUsed": false, "position": 0 },
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Billet",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/billet%2Fbillet_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/billet%2Fbillet_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/billet%2Fbillet_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/billet%2Fbillet_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/billet%2Fbillet_4.png?alt=media"
+			],
+			"definitions": [
+				"Petit carton ou papier imprimé constatant un droit ou une convention, en particulier donnant accès quelque part.",
+				"Moyen de paiement généralement en papier imprimé, émis le plus souvent par la banque centrale ou l'Institut d'émission d'un pays."
+			],
+			"letters": [
+				{ "letter": "B", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Dentelle",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dentelle%2Fdentelle_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dentelle%2Fdentelle_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dentelle%2Fdentelle_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dentelle%2Fdentelle_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dentelle%2Fdentelle_4.png?alt=media"
+			],
+			"definitions": [
+				"Tissu ajouré constitué par l'entrelacement de fils formant un fond de réseau sur lequel se détachent des motifs décoratifs."
+			],
+			"letters": [
+				{ "letter": "D", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "N", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "L", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Dent",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dent%2Fdent_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dent%2Fdent_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dent%2Fdent_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dent%2Fdent_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/dent%2Fdent_4.png?alt=media"
+			],
+			"definitions": [
+				"Organe dur, blanchâtre, implanté sur le bord des mâchoires de la plupart des vertébrés, qui sert à la prise de nourriture et, parfois, à la mastication ou à la défense."
+			],
+			"letters": [
+				{ "letter": "D", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "N", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Neige",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/neige%2Fneige_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/neige%2Fneige_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/neige%2Fneige_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/neige%2Fneige_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/neige%2Fneige_4.png?alt=media"
+			],
+			"definitions": [
+				"Eau congelée qui tombe des nuages en flocons blancs et légers."
+			],
+			"letters": [
+				{ "letter": "N", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "G", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Saisons",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/saisons%2Fsaisons_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/saisons%2Fsaisons_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/saisons%2Fsaisons_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/saisons%2Fsaisons_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/saisons%2Fsaisons_4.png?alt=media"
+			],
+			"definitions": [
+				"Chacune des quatre parties en lesquelles l'année se trouve divisée par les équinoxes et les solstices."
+			],
+			"letters": [
+				{ "letter": "S", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "S", "isUsed": false, "position": 0 },
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "N", "isUsed": false, "position": 0 },
+				{ "letter": "S", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Canard",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/canard%2Fcanard_2.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/canard%2Fcanard_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/canard%2Fcanard_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/canard%2Fcanard_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/canard%2Fcanard_4.png?alt=media"
+			],
+			"definitions": [
+				"Oiseau aquatique ansériforme migrateur, au cou court, au bec aplati apte à filtrer la vase, aux pattes palmées, très courtes, et dont certaines espèces font l'objet d'un élevage important pour leur chair."
+			],
+			"letters": [
+				{ "letter": "C", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "N", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "D", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Orchestre",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/orchestre%2Forchestre_2.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/orchestre%2Forchestre_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/orchestre%2Forchestre_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/orchestre%2Forchestre_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/orchestre%2Forchestre_4.png?alt=media"
+			],
+			"definitions": [
+				"Groupe d'instrumentistes constitué en association de concerts symphoniques."
+			],
+			"letters": [
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "C", "isUsed": false, "position": 0 },
+				{ "letter": "H", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "S", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Robinet",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/robinet%2Frobinet_3.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/robinet%2Frobinet_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/robinet%2Frobinet_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/robinet%2Frobinet_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/robinet%2Frobinet_4.png?alt=media"
+			],
+			"definitions": [
+				"Appareil servant à interrompre ou à rétablir la circulation d'un fluide dans une canalisation, à l'aide d'un obturateur commandé de l'extérieur."
+			],
+			"letters": [
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "B", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "N", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Fromage",
+			"category": "nom masculine",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/fromage%2Ffromage_4.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/fromage%2Ffromage_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/fromage%2Ffromage_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/fromage%2Ffromage_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/fromage%2Ffromage_4.png?alt=media"
+			],
+			"definitions": [
+				"Produit alimentaire obtenu par coagulation du lait, égouttage du caillé ainsi obtenu et, éventuellement, affinage."
+			],
+			"letters": [
+				{ "letter": "F", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "M", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "G", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Baignoire",
+			"category": "nom féminin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/baignoire%2Fbaignoire_2.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/baignoire%2Fbaignoire_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/baignoire%2Fbaignoire_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/baignoire%2Fbaignoire_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/baignoire%2Fbaignoire_4.png?alt=media"
+			],
+			"definitions": [
+				"Appareil sanitaire individuel dans lequel on prend des bains."
+			],
+			"letters": [
+				{ "letter": "B", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "G", "isUsed": false, "position": 0 },
+				{ "letter": "N", "isUsed": false, "position": 0 },
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Chauffage",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chauffage%2Fchauffage_4.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chauffage%2Fchauffage_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chauffage%2Fchauffage_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chauffage%2Fchauffage_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/chauffage%2Fchauffage_4.png?alt=media"
+			],
+			"definitions": ["Installation servant à chauffer un local."],
+			"letters": [
+				{ "letter": "C", "isUsed": false, "position": 0 },
+				{ "letter": "H", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "U", "isUsed": false, "position": 0 },
+				{ "letter": "F", "isUsed": false, "position": 0 },
+				{ "letter": "F", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "G", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Cru",
+			"category": "adjectif",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cru%2Fcru_2.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cru%2Fcru_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cru%2Fcru_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cru%2Fcru_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/cru%2Fcru_4.png?alt=media"
+			],
+			"definitions": ["Qui n'est pas cuit."],
+			"letters": [
+				{ "letter": "C", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 },
+				{ "letter": "U", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Sec",
+			"category": "adjectif",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/sec%2Fsec_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/sec%2Fsec_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/sec%2Fsec_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/sec%2Fsec_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/sec%2Fsec_4.png?alt=media"
+			],
+			"definitions": [
+				"Qui ne renferme pas d'eau, qui n'est pas mouillé, qui a perdu son élément liquide."
+			],
+			"letters": [
+				{ "letter": "S", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "C", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Jeu",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/jeu%2Fjeu_4.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/jeu%2Fjeu_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/jeu%2Fjeu_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/jeu%2Fjeu_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/jeu%2Fjeu_4.png?alt=media"
+			],
+			"definitions": [
+				"Activité d'ordre physique ou mental, non imposée, ne visant à aucune fin utilitaire, et à laquelle on s'adonne pour se divertir, en tirer un plaisir."
+			],
+			"letters": [
+				{ "letter": "J", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 },
+				{ "letter": "U", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Or",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/or%2For_4.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/or%2For_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/or%2For_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/or%2For_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/or%2For_4.png?alt=media"
+			],
+			"definitions": [
+				"Métal d'un jaune brillant, dense, très ductile, inaltérable à l'air et à l'eau et qui a une très grande valeur commerciale."
+			],
+			"letters": [
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "R", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Toit",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/toit%2Ftoit_2.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/toit%2Ftoit_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/toit%2Ftoit_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/toit%2Ftoit_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/toit%2Ftoit_4.png?alt=media"
+			],
+			"definitions": [
+				"Couverture, ouvrage isolant un bâtiment par le haut, notamment fait d'un ou plusieurs versants pentus soutenus par une charpente."
+			],
+			"letters": [
+				{ "letter": "T", "isUsed": false, "position": 0 },
+				{ "letter": "O", "isUsed": false, "position": 0 },
+				{ "letter": "I", "isUsed": false, "position": 0 },
+				{ "letter": "T", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Nuage",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/nuage%2Fnuage_1.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/nuage%2Fnuage_1.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/nuage%2Fnuage_2.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/nuage%2Fnuage_3.png?alt=media",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/nuage%2Fnuage_4.png?alt=media"
+			],
+			"definitions": [
+				"Ensemble visible de particules d’eau très fines, liquides ou solides, maintenues en suspension dans l’atmosphère par les mouvements verticaux de l’air."
+			],
+			"letters": [
+				{ "letter": "N", "isUsed": false, "position": 0 },
+				{ "letter": "U", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "G", "isUsed": false, "position": 0 },
+				{ "letter": "E", "isUsed": false, "position": 0 }
+			]
+		},
+		{
+			"word": "Mais",
+			"category": "nom masculin",
+			"previewImage": "https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/mais%2Fmais_3.png?alt=media",
+			"images": [
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/mais%2Fmais_1.png?alt=media&token=bece8f9f-337b-4158-82f3-9f5eaca8b603",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/mais%2Fmais_2.png?alt=media&token=ed5abf78-d178-4254-b10e-36063d5e82b8",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/mais%2Fmais_3.png?alt=media&token=bd458290-772c-4dc5-bbda-41c190fd1701",
+				"https://firebasestorage.googleapis.com/v0/b/pics1word-81a50.appspot.com/o/mais%2Fmais_4.png?alt=media&token=c218f451-f686-4420-8c3d-1d3d0d6bc541"
+			],
+			"definitions": [
+				"Grande céréale (graminée) d'origine américaine, à la forte tige portant un épi femelle formé de grains placés en rangs très serrés."
+			],
+			"letters": [
+				{ "letter": "M", "isUsed": false, "position": 0 },
+				{ "letter": "A", "isUsed": false, "position": 0 },
+				{ "letter": "Ï", "isUsed": false, "position": 0 },
+				{ "letter": "S", "isUsed": false, "position": 0 }
+			]
+		}
+	]
 }

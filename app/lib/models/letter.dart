@@ -10,17 +10,6 @@ class Letter {
       this.isUsed = false,
       this.position = 0});
 
-  // toJSONEncodable() {
-  //   Map<String, dynamic> item = {};
-
-  //   item['id'] = id;
-  //   item['letter'] = letter;
-  //   item['isUsed'] = isUsed;
-  //   item['position'] = position;
-
-  //   return item;
-  // }
-
   Map toJson() => {
         'id': id,
         'letter': letter,
@@ -39,6 +28,6 @@ class Letter {
 
   @override
   String toString() {
-    return '\nid: $id, letter: $letter, isUsed: $isUsed, \n position: $position';
+    return '\nid: $id, \nletter: $letter, \nisUsed: $isUsed, \n position: $position';
   }
 }

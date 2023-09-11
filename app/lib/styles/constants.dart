@@ -20,7 +20,6 @@ Color lighten(Color color, [double amount = .1]) {
   return hslLight.toColor();
 }
 
-
 const kWhite = Color(0xFFFFFFFF);
 const kLoadingImageBackground = Color(0xFFC9C9C9);
 const kMainTextColor = Color(0xFF162B76);
@@ -61,7 +60,6 @@ const kAppleButtonColor = Color(0xFF333133);
 const kGoogleButtonColor = Color(0xFFFFFFFF);
 
 const kMoneyColor = Color(0xFFDEA30B);
-
 
 const kFailColor = Color(0xFFE52525);
 
@@ -122,6 +120,13 @@ const kSuccessTitleStyle = TextStyle(
 const kSubtileStyle = TextStyle(
   fontWeight: FontWeight.w400,
   color: kWhite,
+  fontSize: kLargeFontSize,
+  decoration: TextDecoration.none,
+);
+
+const kShareTitleStyle = TextStyle(
+  fontWeight: FontWeight.w400,
+  color: kMainTextColor,
   fontSize: kLargeFontSize,
   decoration: TextDecoration.none,
 );

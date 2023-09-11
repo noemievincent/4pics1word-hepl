@@ -1,7 +1,7 @@
-import 'word.dart';
+import 'todays_word.dart';
 
-class Words {
-  List<Word> items = [];
+class DailyWords {
+  List<TodaysWord> items = [];
 
   Map toJson() => {
         'items': items,
