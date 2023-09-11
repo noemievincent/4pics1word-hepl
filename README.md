@@ -1,6 +1,8 @@
 # 4 Images 1 Mot
 
-> ❗❗❗ Malheureusement, le code source ne fonctionne plus depuis que j'ai migré les fichiers sur ce nouveau repo. J'essaierai de le réparer un jour mais il est actuellement injouable si vous veniez à télécharger le code. ❗❗❗
+> ❗❗❗ <br>
+> Malheureusement, le code source ne fonctionne plus depuis que j'ai migré les fichiers sur ce nouveau repo. J'essaierai de le réparer un jour mais il est actuellement injouable si vous veniez à télécharger le code.<br>
+> ❗❗❗
 
 ### ✏️ Description de l'application
 
