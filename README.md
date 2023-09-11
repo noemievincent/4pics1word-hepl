@@ -1,6 +1,6 @@
-# Projet d’examen 2022-2023
+# 4 Images 1 Mot
 
-> Ce document fait partie de votre projet et doit être complété comme demandé dans l'énoncé disponible sur [Moodle](https://moodle.ecolevirtuelle.be/course/view.php?id=29711) [ici](https://moodle.ecolevirtuelle.be/pluginfile.php/579274/mod_resource/content/5/Enonce-Laboratoire-2022-2023.pdf).
+> ❗❗❗ Malheureusement, le code source ne fonctionne plus depuis que j'ai migré les fichiers sur ce nouveau repo. J'essaierai de le réparer un jour mais il est actuellement injouable si vous veniez à télécharger le code. ❗❗❗
 
 ### ✏️ Description de l'application
 
@@ -44,8 +44,8 @@ via Google, Facebook, ou Apple.
   microtransactions sont disponibles pour aider l'utilisateur à progresser plus rapidement dans le
   jeu. ([source](https://en.wikipedia.org/wiki/4_Pics_1_Word))
 
-| points forts                                                                                 | points faibles                                                                                   |
-|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| points forts                                                                                  | points faibles                                                                                    |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | ✅ - possibilité de sauvegarder la progression                                                | ❌ - impossible de savoir ce que certains mots signifient                                         |
 | ✅ - partager le mot pour demander de l'aide                                                  | ❌ - on ne peut pas utiliser de joker si on a pas assez de monnaie                                |
 | ✅ - on peut utiliser le joker directement avec la monnaie du jeu (pas besoin de vrai argent) | ❌ - impossible de rejouer les mots du jour manqués ou même de se "balader" dans les anciens mots |
@@ -56,22 +56,22 @@ via Google, Facebook, ou Apple.
   de logos d'entreprises
   populaires. ([source](https://www.logos-quiz.com/home.php#:~:text=Logo%20Quiz%20is%20a%20free%20game%20where%20you%20guess%20the%20names%20of%20thousands%20of%20logos%20from%20popular%20companies.))
 
-| points forts                                | points faibles                                          |
-|---------------------------------------------|---------------------------------------------------------|
+| points forts                                 | points faibles                                           |
+| -------------------------------------------- | -------------------------------------------------------- |
 | ✅ - les jokers sont stockés en nombre       | ❌ - le seul moyen d'obtenir des joker est d'en gagner   |
 | ✅ - joker pour passer le niveau             | ❌ - les jokers doivent être achetés avec du vrai argent |
-| ✅ - joker qui donne la définition du logo   |                                                         |
-| ✅ - partager le mot pour demander de l'aide |                                                         |
+| ✅ - joker qui donne la définition du logo   |                                                          |
+| ✅ - partager le mot pour demander de l'aide |                                                          |
 
 ![Logo Quiz](readme/logoquiz.png)
 
 - **Art Puzzle** et **Sudoku.com - Number Game** : Ces deux jeux proviennent du même développeur, je les ai choisis car
   je trouve que leur structure est intéressante et corresponde exactement à ce que je recherche
 
-| points forts                                 | points faibles                                        |
-|----------------------------------------------|-------------------------------------------------------|
+| points forts                                  | points faibles                                         |
+| --------------------------------------------- | ------------------------------------------------------ |
 | ✅ - les jokers sont stockés en nombre        | ❌ - le seul moyen d'obtenir des joker est d'en gagner |
-| ✅ - daily challenge sous forme de calendrier |                                                       |
+| ✅ - daily challenge sous forme de calendrier |                                                        |
 
 ![Logo Quiz](readme/easybrain.png)
 
@@ -80,6 +80,7 @@ via Google, Facebook, ou Apple.
 ### 🌙 Moodboard
 
 ![moodboard.png](readme/moodboard.png)
+
 - [lien vers Milanote](https://app.milanote.com/1OPVCi1Q5TBr6x?p=EeG9jqEU1UN)
 
 ---
@@ -135,27 +136,27 @@ Le dossier [`lib`](app/lib) contient tous les fichiers nécessaires au fonctionn
 
 ##### Général
 
-- [X] <span>créer les screens principaux</span>
+- [x] <span>créer les screens principaux</span>
 - [ ] <span>créer les screens d'overlays</span>
-- [X] <span>lier les écrans entre eux</span>
-- [X] <span>afficher la grille d'image</span>
-- [X] <span>mettre en place Firebase</span>
-- [X] <span>mettre en place LocalStorage</span>
+- [x] <span>lier les écrans entre eux</span>
+- [x] <span>afficher la grille d'image</span>
+- [x] <span>mettre en place Firebase</span>
+- [x] <span>mettre en place LocalStorage</span>
 
 ##### Niveau
 
-- [X] <span>permettre de zoomer une image au clic</span>
-- [X] <span>créer une classe `Word` avec ses propriétés</span>
-- [X] <span>créer une classe `Letter` avec ses propriétés</span>
-- [X] <span>générer le tableau de lettres disponibles</span>
-- [X] <span>sélectionner une lettre et l'ajouter/la retirer des lettres sélectionnées</span>
+- [x] <span>permettre de zoomer une image au clic</span>
+- [x] <span>créer une classe `Word` avec ses propriétés</span>
+- [x] <span>créer une classe `Letter` avec ses propriétés</span>
+- [x] <span>générer le tableau de lettres disponibles</span>
+- [x] <span>sélectionner une lettre et l'ajouter/la retirer des lettres sélectionnées</span>
 - [ ] <span>garder un mémoire la position d'une lettre sélectionnée lorsqu'elle est retirée</span>
-- [X] <span>valider le mot</span>
+- [x] <span>valider le mot</span>
 
 ##### Glossaire
 
-- [X] <span>afficher la liste des mots trouvés dans le glossaire</span>
-- [X] <span>afficher les informations d'un mot du glossaire</span>
+- [x] <span>afficher la liste des mots trouvés dans le glossaire</span>
+- [x] <span>afficher les informations d'un mot du glossaire</span>
 - [ ] <span>partager un mot deviné</span>
 
 ##### Challenges
